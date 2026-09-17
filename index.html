@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Web Project</title>
+    <style>
+      /* CSS: Design ke liye */
+      body {
+        text-align: center;
+        margin-top: 100px;
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+      }
+      .my-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .my-btn:hover {
+        background-color: #218838;
+      }
+    </style>
   </head>
   <body>
-    <h1 style="color: blue">Mera pehla web test successful!</h1>
+    <!-- HTML: Structure ke liye -->
+    <h1 id="main-text">Hello World! Mera dusra test.</h1>
+    <button class="my-btn" onclick="changeText()">Click Me!</button>
+
+    <!-- JavaScript: Action/Logic ke liye -->
+    <script>
+      function changeText() {
+        document.getElementById("main-text").innerHTML =
+          "JavaScript successfully kaam kar raha hai! 🎉";
+        document.getElementById("main-text").style.color = "blue";
+      }
+    </script>
   </body>
 </html>
